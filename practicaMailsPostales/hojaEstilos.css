@@ -1,0 +1,157 @@
+/*
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>INDEX</title>
+    <link rel='stylesheet' href='hojaEstilos.css'>
+</head>
+<body>
+    <div class='contenedor'>
+        <form action='' method='post'>
+            <input type='submit' id='cartero' value='ENVIAR'/>
+        </form>
+    </div>
+    
+    <div class='contenedorT'>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type='submit' value='ACTUALIZAR' id='chiquito' />
+    </div>
+
+    <div class='contenedorA'>
+        <a href='#'>Anterior</a>
+        <a href='#'>1</a>
+        <a href='#'>2</a>
+        <a href='#'>3</a>
+        <a href='#'>Siguiente</a>
+        <a href='#' id='apagado'></a>
+    </div>
+
+</body>
+</html>
+*/
+body {
+    background-color: aliceblue;
+}
+
+.contenedor {
+    width: 50%;
+    height: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.contenedorT {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedorT table {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px auto;
+}
+
+td{
+    background-color: white;
+}
+
+th{
+    background-color: cyan;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+p, a{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.contenedorA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial;
+    margin: 20px auto;
+}
+
+.contenedorA a{
+    background-color: lightgrey;
+    text-decoration: none;
+    padding: 10px 10px;
+    border:1px solid black;
+    border-radius: 0.5cap;
+}
+
+#cartero {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cartero:hover, #chiquito:hover {
+    background-color: #0056b3;
+}
+
+#apagado{
+    background-color: white;
+}
+
+#chiquito{
+    background-color: #007bff;
+    color: white;
+    margin: 20px 20px;
+    width: 100px;
+    height: 40px;
+}
